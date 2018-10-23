@@ -238,16 +238,22 @@ a.small {
     border-bottom:none;
 }
 
+/*drop down menu*/
+select {
+  width: 130px;
+  margin-left: 150px;
+}
+
 /* ---------------------- */
 /* artist-item.css Styles */
 /* ---------------------- */
 
 .artist-img {
   width: 60px;
+  display: block;
   border-radius: 12px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  float: left;
+  margin-right: auto;
+  margin-left: 144px;
 }
 
 .artist-info {

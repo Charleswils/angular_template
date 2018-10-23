@@ -1,0 +1,14 @@
+<div class="card search">
+    <span class="artist-img" *ngFor="let item of flashCard">
+        <img *ngIf="item.showImage" src="./images/{{item.imageName}}.jpg" width="140" height="110"/>
+    </span><br>
+    <select (change)="checkAnswer($event)">
+        <ng-container *ngFor="let data of flashCard">   
+            <ng-container *ngIf="data.showImage">   
+                    <ng-container *ngFor="let option of data.options">        
+                    <option value="{{option}}"> {{option}} </option>
+                    </ng-container>
+            </ng-container>
+        </ng-container>                 
+    </select>
+</div>
